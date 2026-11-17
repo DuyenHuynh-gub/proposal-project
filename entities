@@ -1,1 +1,5 @@
-
+This file serves as a sort of brainstorm, helping me keep track of the entities within the Bookverse project.
+1. 'Users': ID, Last.name, First.name, 
+2. 'Books': book.ID, author.ID, Title, Author, Status, 
+3. 'Authors': author.ID, Last.name, First.name,
+4. '
