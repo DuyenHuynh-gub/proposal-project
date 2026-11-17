@@ -1,6 +1,20 @@
 This file serves as a sort of brainstorm, helping me keep track of the entities within the Bookverse project.
-1. 'Users': user.ID, Last.name, First.name, 
-2. 'Books': book.ID, author.ID, Title, Author, Status, 
-3. 'Authors': author.ID, Last.name, First.name,
-4. 'MyLibrary': user.ID, , book.ID, Status, Purchases, Rented, 
-5. '
+        
+1. 'Users': user.ID, Last.name, First.name, Email, Phone
+2. 'Subscriptions' : ID, user.ID, plan.ID, Start.Date, End.Date, Active
+3. 'Membership.plan' : plan.ID, Name, Price, Duration
+4. 'User.Address': user.ID, Address.ID, Address, State, Zip/Code
+5. 'Payments': ?
+
+1. 'Books': book.ID, Title, Status,
+2. 'Book.Author': ID, book.ID, author.ID, 
+3. 'Authors': author.ID, Last.name, First.name
+4. 'Category': book.ID, category
+5. 'Genres': book.ID, genre
+6. 'DigitalFiles': book.ID, URL
+
+1. 'MyLibrary': user.ID, , book.ID, Progress, Purchases, Rented, 
+. 'Events': Event, Time.Begin, Time.End, Description, Deals, Participation,
+. 'Rankings': book.ID, Rates,
+8. '
+
