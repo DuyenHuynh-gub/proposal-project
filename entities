@@ -3,18 +3,26 @@ This file serves as a sort of brainstorm, helping me keep track of the entities 
 1. 'Users': user.ID, Last.name, First.name, Email, Phone
 2. 'Subscriptions' : ID, user.ID, plan.ID, Start.Date, End.Date, Active
 3. 'Membership.plan' : plan.ID, Name, Price, Duration
-4. 'User.Address': user.ID, Address.ID, Address, State, Zip/Code
+4. 'User.Address': user.ID, address.ID, Address, State, Zip/Code
 5. 'Payments': ?
 
-1. 'Books': book.ID, Title, Status,
+1. 'Books': book.ID, Title, Status, for.rent, for.purchase
 2. 'Book.Author': ID, book.ID, author.ID, 
 3. 'Authors': author.ID, Last.name, First.name
 4. 'Category': book.ID, category
 5. 'Genres': book.ID, genre
 6. 'DigitalFiles': book.ID, URL
+7. 'Series' : book.ID, Series 
+8. 'Required'' book.ID, plan.ID
 
-1. 'MyLibrary': user.ID, , book.ID, Progress, Purchases, Rented, 
-. 'Events': Event, Time.Begin, Time.End, Description, Deals, Participation,
-. 'Rankings': book.ID, Rates,
-8. '
+
+
+1. 'MyLibrary': list.ID, user.ID, , book.ID, Progress 
+2. 'Rented': list.ID, book.ID, Start.Date, End.Date
+
+ 
+1. 'Events': Event.name, Format, Location, Time.Begin, Time.End, Description, Deals, Participation, 
+
+1. 'Goods': goods.ID, book.ID, Name, Retail, Sale, 
+2. 'Orders': order.ID, user.iD, goods.ID, quantity, address.ID, payment, 
 
