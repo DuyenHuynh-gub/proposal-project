@@ -6,15 +6,13 @@ This file serves as a sort of brainstorm, helping me keep track of the entities 
 4. 'User.Address': user.ID, address.ID, Address, State, Zip/Code
 5. 'Payments': ?
 
-1. 'Books': book.ID, Title, Status, for.rent, for.purchase
+1. 'Books': book.ID, Title, category, Status, for.rent, for.purchase
 2. 'Book.Author': ID, book.ID, author.ID, 
 3. 'Authors': author.ID, Last.name, First.name
-4. 'Category': book.ID, category
-5. 'Genres': book.ID, genre
-6. 'DigitalFiles': book.ID, URL
-7. 'Series' : book.ID, Series 
-8. 'Required'' book.ID, plan.ID
-
+4. 'Genres': book.ID, genre
+5. 'DigitalFiles': book.ID, URL
+6. 'Series' : book.ID, Series 
+7. 'BookAccess'' book.ID, plan.ID
 
 
 1. 'MyLibrary': list.ID, user.ID, , book.ID, Progress 
@@ -24,5 +22,6 @@ This file serves as a sort of brainstorm, helping me keep track of the entities 
 1. 'Events': Event.name, Format, Location, Time.Begin, Time.End, Description, Deals, Participation, 
 
 1. 'Goods': goods.ID, book.ID, Name, Retail, Sale, 
-2. 'Orders': order.ID, user.iD, goods.ID, quantity, address.ID, payment, 
+2. 'Orders': order.ID, user.iD, address.ID, order.date, total.amount, status
+3. 'orderItems': orderitem.ID, order.ID, goods.ID, quantity, unit.price
 
