@@ -1,27 +1,27 @@
 This file serves as a sort of brainstorm, helping me keep track of the entities within the Bookverse project.
         
 1. 'Users': user.ID, Last.name, First.name, Email, Phone
-2. 'Subscriptions' : ID, user.ID, plan.ID, Start.Date, End.Date, Active
+2. 'Subscriptions' : supscription.ID, user.ID, plan.ID, Start.Date, End.Date, Active
 3. 'Membership.plan' : plan.ID, Name, Price, Duration
 4. 'User.Address': user.ID, address.ID, Address, State, Zip/Code
-5. 'Payments': ?
+5. 'Payments': payment.ID, user.ID, supscription.ID, rental.ID, order.ID, amount, payment.date, payment.method, status
 
-1. 'Books': book.ID, Title, category, Status, for.rent, for.purchase
+1. 'Books': book.ID, Title, category, Status, series.ID, Volume#  
 2. 'Book.Author': ID, book.ID, author.ID, 
 3. 'Authors': author.ID, Last.name, First.name
 4. 'Genres': book.ID, genre
-5. 'DigitalFiles': book.ID, URL
-6. 'Series' : book.ID, Series 
-7. 'BookAccess'' book.ID, plan.ID
+5. 'DigitalFiles': file.ID, book.ID, format, URL, content.type
+6. 'Series' : series.ID, serie.name
+7. 'BookAccess': book.ID, plan.ID, 
+8. 'Rental.Option': option.ID, book.ID, duration, price
+9. 'Special.Chapter': sp.ID, book.ID, file.ID, chapter.#, plan.ID
 
-
-1. 'MyLibrary': list.ID, user.ID, , book.ID, Progress 
-2. 'Rented': list.ID, book.ID, Start.Date, End.Date
-
+1. 'MyLibrary': list.ID, user.ID, , book.ID, progress 
+2. 'Rentals': rental.ID, user.ID, option.ID, Start.Date, End.Date, status
  
-1. 'Events': Event.name, Format, Location, Time.Begin, Time.End, Description, Deals, Participation, 
+1. 'Events': event.ID, Event.name, Format, Location, Time.Begin, Time.End, Description, Deals, Participation, 
 
-1. 'Goods': goods.ID, book.ID, Name, Retail, Sale, 
+1. 'Goods': goods.ID, book.ID, Name, Type, Edition, Retail, Sale, stock.quantity, status
 2. 'Orders': order.ID, user.iD, address.ID, order.date, total.amount, status
-3. 'orderItems': orderitem.ID, order.ID, goods.ID, quantity, unit.price
-
+3. 'OrderItems': orderitem.ID, order.ID, goods.ID, quantity, unit.price
+4. 'Goods.Wish.list': wishlist.ID, user.ID, goodS.id, AddedDate
