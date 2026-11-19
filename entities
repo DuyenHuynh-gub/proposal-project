@@ -24,4 +24,3 @@ This file serves as a sort of brainstorm, helping me keep track of the entities 
 1. 'Goods': goods.ID, book.ID, Name, Type, Edition, Retail, Sale, stock.quantity, status
 2. 'Orders': order.ID, user.iD, address.ID, order.date, total.amount, status
 3. 'OrderItems': orderitem.ID, order.ID, goods.ID, quantity, unit.price
-4. 'Goods.Wish.list': wishlist.ID, user.ID, goodS.id, AddedDate
